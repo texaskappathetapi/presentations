@@ -242,7 +242,6 @@ Open the `/top_artists` route and you'll see a JSON output like
 * Uses Python-like syntax with some exceptions
 * Jinja-specific statements enclosed in `{\0025     \0025}`
 * Python expressions enclosed in `{{     }}`
-* You can even embed a template inside another! `{% include content.html %}`
 
 --
 
