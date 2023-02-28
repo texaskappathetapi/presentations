@@ -10,7 +10,7 @@ with Neha Desaraju
 
 ## BEFORE WE BEGIN
 
-1. Check in with code 
+1. Check in with code `aridian`
 2. Download the CSV [https://tinyurl.com/ktpdspres](https://tinyurl.com/ktpdspres)
 3. Go to Google Colab and open up a new notebook @ colab.research.google.com
 
