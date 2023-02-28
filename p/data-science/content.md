@@ -24,7 +24,7 @@ with Neha Desaraju
 * Provides guides on managing large amounts of data or varying data
 * A field of mathematics & computer science
 
---- 
+---
 
 ## What we're doing today
 
