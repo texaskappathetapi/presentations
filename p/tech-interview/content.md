@@ -87,7 +87,37 @@ Given an array of integers and an additional integer x, print out pairs of numbe
 
 --
 
+```python
+def print_pairs_sum_to_x(arr, x):
+    seen = set()
+    for num in arr:
+        complement = x - num
+        if complement in seen:
+            print(complement, num)
+        seen.add(num)
+```
+
+--
+
 Given k sorted arrays, each containing n elements, combine them in sorted order.
+
+--
+
+```python
+import heapq
+
+def merge_sorted_arrays(arrays):
+    heap = [(array[0], i, 0) for i, array in enumerate(arrays) if array]
+    heapq.heapify(heap)
+    merged = []
+    while heap:
+        val, arr_idx, elem_idx = heapq.heappop(heap)
+        merged.append(val)
+        if elem_idx + 1 < len(arrays[arr_idx]):
+            next_val = arrays[arr_idx][elem_idx + 1]
+            heapq.heappush(heap, (next_val, arr_idx, elem_idx + 1))
+    return merged
+```
 
 ---
 
